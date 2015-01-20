@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="banner">
+	<%= image_tag("rails.png", :size => "100x50") %>
+	
+</div>	
 <%= yield %>
-
+<div id="nav">
+	<ul>
+		<li><%= link_to "Questions"%></li>
+		<li><%= link_to "Movie News", 'http://oscar.go.com/nominees' %></li>
+	</ul>
+</div>	
 </body>
 </html>
